@@ -1,0 +1,159 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial,sans-serif;
+	
+}
+
+h1{
+box-sizing: border-box;
+line-height: 1.4;
+	color: #333;
+	overflow-x: hidden;
+	background: #333;
+	position: sticky;
+	top: 0;
+	padding: 1.5rem;
+	z-index: 1;
+	border-bottom: 4px solid #5DFF00;
+		
+}
+ul
+{
+	list-style-type:none;
+	float: right;
+	margin-top: 25px ;
+	display: flex;
+	
+}
+ul li
+{
+	display: inline;
+		padding: 10px;
+}
+ul li a{
+	text-decoration:none;
+	padding: 1.5px;
+	font-size: 1.3rem;
+	margin: 0 0.5rem;
+	border-radius: 11px;
+	color:whitesmoke;
+	transition:0.5s ease; 
+}
+ul li a:hover 
+{
+	background-color:snow;
+	color:cornflowerblue;
+}
+#showcase{background: url("../shroud3.jpg") no-repeat  center center/cover;
+	height:103vh;
+}
+.showcase-content{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	position:absolute;
+	top:95px;
+	left:0;
+	bottom:0;
+	right:0;
+	color:lightblue;
+}
+.showcase-content h2{
+	font-size: 4rem;
+	margin-bottom: 2rem;
+}
+#about{
+	padding: 3rem 0;
+}
+h3,#achiev h2,#Contacts h4{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+p{
+	margin-bottom: 1rem;
+	color:navajowhite;
+}
+.about{
+	display:table-header-group;
+	font-size: 25px;
+	border-radius: 20%;
+	background: url("../black.jpg");
+	
+}
+.pic{
+	display: flex;
+	margin-left:auto;
+	width: 75%;
+	border-radius: 20%;
+	
+	
+}
+/*section:ACHIEVEMENTS*/
+#achiev{
+	padding: 5rem 0;
+}
+#achiev .boxes{
+	display:flex;
+}
+#achiev .box{
+	color:wheat;
+	background-color:lavenderblush;
+	background-image: url("../black.jpg");
+	flex: 55;
+	padding: 3rem;
+	margin: 0 3rem;
+	border-radius: 20px;
+	box-shadow: 25px 25px 55px #ff56;
+	font-size:1.8rem;
+}
+/*sec:contacts*/
+
+h5{
+box-sizing: border-box;
+	color:#333;
+	line-height: 1.4;
+	background: #333;
+	position: sticky;
+	top: 0;
+	padding: 1.5rem rem;
+	z-index: 1;
+}
+
+h5 li a{
+	color:black;
+	background-color:lightskyblue;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 420px)
+{
+	.about{
+		font-size: 20px;
+	}
+	
+	h3{
+		font-size: 30px;
+	}
+	#achiev h2{
+		font-size: 30px;
+	}
+	#achiev .box{
+		font-size: 20px;
+	}
+	#Contacts h4{
+		font-size: 30px; 
+	}
+	h5 li a{
+		font-size: 10px;
+	}
+	ul li a{
+		font-size: 10px;
+	}
+	.pic{
+		background-blend-mode: color-burn;
+	}
+}
